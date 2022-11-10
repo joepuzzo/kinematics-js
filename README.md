@@ -139,6 +139,12 @@ forward(0, 0, -Math.PI / 2, Math.PI, -Math.PI / 2, 0, {
 | v5   | yes      | length between joint 5 and 6                |
 | v6   | yes      | length between joint 6 and the end effector |
 
+## Live Demo
+
+See the kinematics in action [here](https://robot-viewer-qfmqx.ondigitalocean.app/)
+
+![Robot Move](https://github.com/joepuzzo/kinematics-js/blob/main/RobotMove.gif?raw=true)
+
 ## Kinematics Diagram
 
 ![Kinematics Diagram](https://github.com/joepuzzo/robot-viewer/blob/main/src/server/static/KinematicsDiagram.jpg?raw=true)
