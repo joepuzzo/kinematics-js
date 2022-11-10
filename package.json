@@ -1,6 +1,6 @@
 {
   "name": "kinematics-js",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A forward and inverse kinematics package for a basic 6 axis robotic arm.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
