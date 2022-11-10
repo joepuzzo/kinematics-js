@@ -2,10 +2,11 @@
 
 A forward and inverse kinematics package for a basic 6 axis robotic arm.
 
-<img src="https://media.giphy.com/media/rEBIw2AuFfQLLGQVk0/giphy.gif" alt="Robot Showoff" style="width:400px;"/>
+<!-- <img src="https://media.giphy.com/media/rEBIw2AuFfQLLGQVk0/giphy.gif" alt="Robot Showoff" style="width:400px;"/> -->
+<!-- <img src="https://media.giphy.com/media/XEgQZk2Y5zn1boXSxM/giphy.gif" alt="Robot Move" style="width:400px;"/> -->
+<img src="https://media.giphy.com/media/7RbY5UkuUeFp59doZk/giphy.gif" alt="Robot Move" style="width:400px;"/>
 <img src="https://media.giphy.com/media/k87CMOciyrvSpbV0KU/giphy.gif" alt="Robot Euler" style="width:400px;"/>
 <!-- <img src="https://media.giphy.com/media/nKaCOx0NrSUMg9ulpd/giphy.gif" alt="Robot Dance" style="width:400px;"/> -->
-<!-- <img src="https://media.giphy.com/media/XEgQZk2Y5zn1boXSxM/giphy.gif" alt="Robot Move" style="width:400px;"/> -->
 
 ## Inverse
 
