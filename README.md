@@ -143,7 +143,7 @@ forward(0, 0, -Math.PI / 2, Math.PI, -Math.PI / 2, 0, {
 
 See the kinematics in action [here](https://robot-viewer-qfmqx.ondigitalocean.app/)
 
-![Robot Move](https://github.com/joepuzzo/kinematics-js/blob/main/RobotMove.gif?raw=true)
+![Robot Move](https://media.giphy.com/media/XEgQZk2Y5zn1boXSxM/giphy.gif)
 
 ## Kinematics Diagram
 
