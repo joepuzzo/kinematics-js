@@ -2,7 +2,39 @@
 
 A forward and inverse kinematics package for a basic 6 axis robotic arm.
 
-Examples:
+```js
+inverse(5, 0, 11, 0, 0, 0, {
+  base: 1,
+  v1: 2.5,
+  v2: 3,
+  v3: 2.5,
+  v4: 2.5,
+  v5: 2.5,
+  v6: 2,
+});
+```
+
+| Parameter | Description                                                                      |
+| --------- | -------------------------------------------------------------------------------- |
+| x         | x cartesian coordinate in the three dimensional space relative to the base frame |
+| y         | y cartesian coordinate in the three dimensional space relative to the base frame |
+| z         | z cartesian coordinate in the three dimensional space relative to the base frame |
+| r1        | euler angle 1, the rotation around the z1 axis of the end effector               |
+| r2        | euler angle 2, the rotation around the x axis of the end effector                |
+| r3        | euler angle 3, the rotation around the z2 axis of the end effector               |
+| config    | robot configuration see table below                                              |
+
+| Key  | required | Description                                 |
+| ---- | -------- | ------------------------------------------- |
+| base | no       | height of the base                          |
+| v1   | yes      | length between joint 1 and 2                |
+| v2   | yes      | length between joint 2 and 3                |
+| v3   | yes      | length between joint 3 and 4                |
+| v4   | yes      | length between joint 4 and 5                |
+| v5   | yes      | length between joint 5 and 6                |
+| v6   | yes      | length between joint 6 and the end effector |
+
+### Examples:
 
 ```js
 
@@ -33,7 +65,7 @@ const config == {
 inverse(0, 0, 15, 0, 0, 0, config)
 // ==> [0, 0, 0, 0, 0, 0]
 
- /**
+/**
  *                  [ ]
  *                   |
  *    ( ) -- [ ] -- ( )
@@ -43,6 +75,18 @@ inverse(0, 0, 15, 0, 0, 0, config)
  *    [ ]
  */
 inverse(5, 0, 10, 0, 0, 0, config)
+// ==> [0, 0, -Math.PI / 2, 0, Math.PI / 2, 0 ]
+
+/**
+ *                  [ ]
+ *                   |
+ *    ( ) -- [ ] -- ( )
+ *     |
+ *    ( )
+ *     |
+ *    [ ]
+ */
+inverse(5, 0, 11, 0, 0, 0, { ...config, base: 1 })
 // ==> [0, 0, -Math.PI / 2, 0, Math.PI / 2, 0 ]
 ```
 
